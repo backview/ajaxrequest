@@ -13,23 +13,49 @@ You have to include the library like this:
     <script>
           //Get request example
           var callback_get = function(err, response){
-            console.log("err: "+err);
-            console.log("response: "+response);
+            console.log("err: "+err); //err is a boolean (true == there is an error, false == there are no errors)
+            console.log("response: "+response); //response is a string and if error the string will be contain the type of the error ("404" or "500")
           }
           var request = new Request("test_get.php", "GET", [{name: "test", value: 10}, {name: "test2", value: 100}], callback_get); //inizialize the Request object
           request.send(); //send the request
     </script>
 ```
+
+Contracted mode:
+```
+    <script>
+          //Get request example
+          var callback_get = function(err, response){
+            console.log("err: "+err); //err is a boolean (true == there is an error, false == there are no errors)
+            console.log("response: "+response); //response is a string and if error the string will be contain the type of the error ("404" or "500")
+          }
+          new Request("test_get.php", "GET", [{name: "test", value: 10}, {name: "test2", value: 100}], callback_get).send();
+    </script>
+```
+
+
 #### For a post request:
 ```
     <script>
           //Post request example
           var callback_get = function(err, response){
-            console.log("err: "+err);
-            console.log("response: "+response);
+            console.log("err: "+err); //err is a boolean (true == there is an error, false == there are no errors)
+            console.log("response: "+response); //response is a string and if error the string will be contain the type of the error ("404" or "500")
           }
           var request = new Request("test_post.php", "POST", [{name: "test", value: 10}, {name: "test2", value: 100}], callback_get); //inizialize the Request object
           request.send(); //send the request
+    </script>
+```
+
+Contracted mode:
+```
+    <script>
+          //Post request example
+          var callback_get = function(err, response){
+            console.log("err: "+err); //err is a boolean (true == there is an error, false == there are no errors)
+            console.log("response: "+response); //response is a string and if error the string will be contain the type of the error ("404" or "500")
+          }
+          new Request("test_post.php", "POST", [{name: "test", value: 10}, {name: "test2", value: 100}], callback_get).send();
     </script>
 ```
 ***
