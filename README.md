@@ -1,12 +1,14 @@
 # ajaxrequest
 This in a simple class that permit to make ajax request in simpler way :blush: [![Build Status](https://camo.githubusercontent.com/cfcaf3a99103d61f387761e5fc445d9ba0203b01/68747470733a2f2f7472617669732d63692e6f72672f6477796c2f657374612e7376673f6272616e63683d6d6173746572)]()
+***
 ## How can i include it ?
 You have to include the library like this:
 ```
 <script src="request.js"></script>
 ```
+***
 ## How does it work ?
-For a get request:
+#### For a get request:
 ```
     <script>
           //Get request example
@@ -18,7 +20,7 @@ For a get request:
           request.send(); //send the request
     </script>
 ```
-For a post request:
+#### For a post request:
 ```
     <script>
           //Post request example
@@ -30,6 +32,7 @@ For a post request:
           request.send(); //send the request
     </script>
 ```
+***
 ## Considerations:
 GET is simpler and faster than POST, and can be used in most cases.
 
