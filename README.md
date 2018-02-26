@@ -30,3 +30,10 @@ For a post request:
           request.send(); //send the request
     </script>
 ```
+## Considerations:
+GET is simpler and faster than POST, and can be used in most cases.
+
+However, always use POST requests when:
+- A cached file is not an option (update a file or database on the server).
+- Sending a large amount of data to the server (POST has no size limitations).
+- Sending user input (which can contain unknown characters), POST is more robust and secure than GET.
