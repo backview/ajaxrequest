@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Test page!</title>
+    <script src="../../lib/request.js"></script>
+    <script>
+      //Post request example
+      var callback_post = function(err, response){
+        console.log("err: "+err);
+        console.log("response: "+response);
+      }
+      new Request("test_post.php", "POST", [{name: "test", value: 10}, {name: "test2", value: 100}], callback_post).send();
+    </script>
+  </head>
+  <body>
+    Open the console to see the result!
+  </body>
+</html>
