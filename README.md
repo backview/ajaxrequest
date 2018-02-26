@@ -63,6 +63,8 @@ Contracted mode:
 Type of errors:
 - "404" -> The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.
 - "500" -> A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.
+
+PS: The type error will be sended in the callback as string in the response variable.
 ***
 ## Considerations:
 GET is simpler and faster than POST, and can be used in most cases.
