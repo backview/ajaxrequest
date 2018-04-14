@@ -21,7 +21,7 @@ You have to include the library like this:
     </script>
 ```
 
-Contracted mode:
+Short mode:
 ```
     <script>
           //Get request example
@@ -47,7 +47,7 @@ Contracted mode:
     </script>
 ```
 
-Contracted mode:
+Short mode:
 ```
     <script>
           //Post request example
